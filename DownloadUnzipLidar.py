@@ -28,9 +28,8 @@ def listfiles(folder):
 
 def handleDownload(block):
     file.write(block)
-    print ".",
 
-
+    
 def main():
 
     # edit these variables to the paths you want to use your computer
@@ -53,7 +52,7 @@ def main():
     ftp.cwd("pub/pasda/psu_opp/2017Orthophotos/LIDAR/DEM")
 
     filenames = ftp.nlst() # get filenames within the directory
-    print filenames
+    print(filenames)
 
     lidar_downloads = []
 
